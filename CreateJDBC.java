@@ -9,11 +9,14 @@ public class CreateJDBC {
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			
-			Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/College","root","root");
+			String urlDB="jdbc:mysql://localhost:3306/College";
+			String userName="root";
+			String password="root";
+			Connection con=DriverManager.getConnection(urlDB, userName, password);
+			
 			Statement stmt=con.createStatement();
 			
 			System.out.println("Inserting the Value in Database");
-			
 			String query="Insert into Student values(10, 'Rohan', 'Bihar', 70, 'D')";
 			stmt.execute(query);
 			
