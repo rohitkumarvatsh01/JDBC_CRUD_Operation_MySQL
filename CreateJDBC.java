@@ -9,7 +9,7 @@ public class CreateJDBC {
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			
-			Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/College","root","Rohitkumar01@");
+			Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/College","root","root");
 			Statement stmt=con.createStatement();
 			
 			System.out.println("Inserting the Value in Database");
