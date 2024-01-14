@@ -31,6 +31,9 @@ public class DeleteJDBC {
 			else {
 				System.out.println("No records found with RollNo "+rollNo);
 			}
+
+			pstmt.close();
+			con.close();
 			
 		} catch (Exception e) {
 			
