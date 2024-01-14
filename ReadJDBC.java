@@ -10,10 +10,13 @@ public class ReadJDBC {
 	public static void main(String[] args) {
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
-			Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/College","root","root");
+			
+			String urlDB="jdbc:mysql://localhost:3306/College";
+			String userName="root";
+			String password="root";
+			Connection con=DriverManager.getConnection(urlDB, userName, password);
 			
 			String query="SELECT * FROM Student";
-			
 			Statement stmt=con.createStatement();
 			ResultSet rset=stmt.executeQuery(query);
 			
