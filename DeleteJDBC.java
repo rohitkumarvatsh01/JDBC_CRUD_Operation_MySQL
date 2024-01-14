@@ -13,7 +13,7 @@ public class DeleteJDBC {
 			
 			String urlDB="jdbc:mysql://localhost:3306/College";
 			String userName="root";
-			String password="Rohitkumar01@";
+			String password="root";
 			
 			Connection con=DriverManager.getConnection(urlDB, userName, password);
 			
