@@ -12,7 +12,7 @@ public class CreateDataJdbc {
 			
 			String urlDatabase="jdbc:mysql://localhost:3306/College";
 			String userName="root";
-			String password="Rohitkumar01@";
+			String password="Rohit";
 			Connection con=DriverManager.getConnection(urlDatabase, userName, password);
 			System.out.println("Database is Connected Succesfully...");
 			
