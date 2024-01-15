@@ -13,7 +13,7 @@ public class ReadDataJdbc {
 			
 			String urlDB="jdbc:mysql://localhost:3306/College";
 			String userName="root";
-			String password="Rohitkumar01@";
+			String password="Rohit";
 			
 			Connection con=DriverManager.getConnection(urlDB, userName, password);
 			System.out.println("Database Connected Succesfully");
