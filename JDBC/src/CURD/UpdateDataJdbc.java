@@ -15,7 +15,7 @@ public class UpdateDataJdbc {
 			
 			String urlDb="jdbc:mysql://localhost:3306/College";	
 			String userName="root";
-			String password="Rohitkumar01@";
+			String password="Rohit";
 			
 			Connection con=DriverManager.getConnection(urlDb, userName, password);
 			System.out.println("Database connection Successfully...");
